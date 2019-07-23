@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --main-green:#4DBDA7;
+    --main-orange:#FFD664;
+    --main-purple:#D47FA9;
+    --main-white:#fff;
+    --main-black:#252525;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 2rem;
+    background-color:var(--main-black);
+    color:var(--main-black);
+}
+
+#title {
+    padding:20px;
+    color:var(--main-white);
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 500;
+}
+
+#quote {
+    margin:0 auto;
+    width:80%;
+    background-color:var(--main-white);
+    border-radius:19px;
+    position: relative;
+    border:2px solid var(--main-purple);
+    margin-top:55px;
+    box-shadow: 31px 31px 31px -20px #000;
+}
+
+#text {
+    text-align: center;
+    padding:2% 20%;
+    font-style: oblique;
+}
+
+#author {
+    text-align: right;
+    padding:4% 10%;
+    font-style: italic;
+    font-size: 24px;
+}
+
+#tweet,
+#new-quote {
+    width: 200px;
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    margin-bottom: 20px;    
+    font-size: 1.2rem;
+    font-family: 'Amaranth', sans-serif;
+    outline:none;
+    box-shadow: 3px 3px 3px -2px #000;
+    font-weight: 700;
+}
+
+#tweet:hover,
+#tweet:active,
+#new-quote:hover,
+#new-quote:active {
+    background-color: #fff;
+    color: var(--main-black);
+    border: 1px solid var(--main-black);
+}
+
+#tweet:focus,
+#new-quote:focus {
+    outline:none;
+}
+
+#tweet,
+#new-quote {
+    border-radius: 210px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #container {
+      font-size: 25px;
+    }
+  
+    #title {
+      padding: 50px;
+      font-size: 35px;
+    }
+  
+    #text {
+      padding: 2% 10%;
+      height: 20vh;
+      font-size: 20px;
+    }
+  
+    #author {
+      padding: 2% 10%;
+      font-size: 16px;
+    }
+  
+    #tweet,
+    #new-quote {
+      width: 100px;
+      padding: 15px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top:20px;
+    }
+  
+  }
